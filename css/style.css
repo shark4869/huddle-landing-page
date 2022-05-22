@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+    --bg: hsl(257, 40%, 49%);
+    --button: hsl(300, 69%, 71%);
+}
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: var(--bg);
+}
+body {
+    font-size: 1.5rem;
+}
+.bg {
+    background: url(../images/bg-desktop.svg) no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.main {
+    max-width: 1200px;
+    margin: 30px auto;
+    
+}
+.huddle {
+    display: flex;
+    position: relative;
+}
+.logo {
+    width: 200px;
+    margin-bottom: 40px;
+}
+.huddle__design {
+    max-width: 600px;
+}
+
+.huddle__desc {
+    margin: 50px 0 0 50px;
+    color: #fff;
+    
+}
+
+.huddle__heading {
+    margin-bottom: 24px;
+}
+
+.huddle__details {
+    font-family: 'Open Sans', sans-serif;
+
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+.huddle__btn {
+    width: 180px;
+    height: 46px;
+    border: none;
+    background-color: #fff;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: var(--bg);
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.huddle__btn:hover {
+    background-color: var(--button);
+    color: #fff;
+}
+.huddle__social {
+
+   position: absolute;
+   right: 0;
+   bottom: 0px;
+   
+}
+
+.huddle__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.8rem;
+    margin: 0 3px;
+}
+.huddle__link:hover {
+    color: var(--button);
+}
+
+.attribution { font-size: 13px; text-align: center; }
+.attribution a { color: hsl(228, 41%, 93%); }
+
+@media (max-width: 1023px) {
+    .bg {
+        background: url(../images/bg-mobile.svg) no-repeat center/cover;
+        width: 100%;
+       
+    }
+    .main {
+        max-width: 90%;
+    }
+    .huddle {
+    
+        flex-direction: column;
+    }
+    .huddle__desc {
+        margin: 50px 0 0 ;
+    }
+
+    .huddle__heading {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    
+    .huddle__details {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+    .huddle__btn {
+        width: 220px;
+       margin: 0 auto;
+       display: block;
+    }
+    .huddle__social {
+        position: unset;
+        text-align: center;
+        margin-top: 60px;
+    }
+}
